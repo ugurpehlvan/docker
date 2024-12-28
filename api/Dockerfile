@@ -46,5 +46,8 @@ CMD ["npm", "run", "dev"]
 # docker run --name myapp_c -p 4000:4000 -v /Users/ugur/Desktop/projects/docker-course/api:/app -v /app/node_modules myimage
 # docker-compose up  // is combined command for docker
 # docker-compose down --rmi all -v (--rmi-all removes all the image, -v remove volumes)
+# docker login (to login docker hub)
+# docker push ugurpehlivan/myapp_c (push images to the docker hub to share with other people)
+# docker pull ugurpehlivan/myapp_c (download images from docker hub)
 
 
