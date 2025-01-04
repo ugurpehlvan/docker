@@ -49,5 +49,14 @@ CMD ["npm", "run", "dev"]
 # docker login (to login docker hub)
 # docker push ugurpehlivan/myapp_c (push images to the docker hub to share with other people)
 # docker pull ugurpehlivan/myapp_c (download images from docker hub)
+# docker logs [containerId] (logs the all running command when container launch)
+# docker exec [containerId] -it redis-cli (this will help you to go in redis-cli server in docker)
+# docker exec [containerId] -it sh (this will allow you to pass in any running container, open I shell in container) 
+# if you are in a container you can exit from pressing "ctrl + d"
+# docker run -it my_container sh (this will run my_container and then sh will allow you to open shell)
 
 
+# -------------- docker file schema
+# 1 specify a base image
+# 2 Install additional programs, dependencies etc.
+# 3 specify command to run on container
