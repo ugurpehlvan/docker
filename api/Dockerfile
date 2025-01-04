@@ -8,13 +8,15 @@ RUN npm install -g nodemon
 # every command under this line will work on /app directory because we coppied all the source file inside app
 WORKDIR /app
 
+# this line will necassary for caching package.json file otherwise when we change our codebase 
+COPY ./package.json .
+# run this command on image to install dependencies (all dependecies will be loaded on image)
+RUN npm install
+
 # then we are creating the image of our source code
 # The fist dot represent the copy from current directory, second dot is path inside the image, which we want to copy our soruce code. 
 # COPY . /app => create app directory in the image and copy our source file inside it  (Example)
 COPY . .
-
-# run this command on image to install dependencies (all dependecies will be loaded on image)
-RUN npm install
 
 # The port that this container should listen on.
 EXPOSE 4000
