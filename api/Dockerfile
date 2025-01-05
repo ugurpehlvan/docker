@@ -47,6 +47,8 @@ CMD ["npm", "run", "dev"]
 # to skip node_modules changes into container, we need to add anonoymous volumes.
 # docker run --name myapp_c -p 4000:4000 -v /Users/ugur/Desktop/projects/docker-course/api:/app -v /app/node_modules myimage
 # docker-compose up  // is combined command for docker
+# docker-compose up --build  // build new image and run container
+# docker-compose down (stops all the containers)
 # docker-compose down --rmi all -v (--rmi-all removes all the image, -v remove volumes)
 # docker login (to login docker hub)
 # docker push ugurpehlivan/myapp_c (push images to the docker hub to share with other people)
@@ -56,6 +58,8 @@ CMD ["npm", "run", "dev"]
 # docker exec [containerId] -it sh (this will allow you to pass in any running container, open I shell in container) 
 # if you are in a container you can exit from pressing "ctrl + d"
 # docker run -it my_container sh (this will run my_container and then sh will allow you to open shell)
+
+# docker compose ps (will show all the running containers)
 
 
 # -------------- docker file schema

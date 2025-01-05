@@ -18,3 +18,9 @@ services:
       - /app/node_modules
     stdin_open: true
     tty: true
+
+
+    # purpose of docker compose
+    # 1- Helps to avoid running long commands
+    # 2- RUn multiple container at the same time and provides connection 
+    
