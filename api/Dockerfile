@@ -61,6 +61,9 @@ CMD ["npm", "run", "dev"]
 
 # docker compose ps (will show all the running containers)
 
+# docker build -f Dockerfile.dev . (we can name dockerfile name other than dockerfile with -f flag)
+# docker run -it [imageId] npm run test (this will run the test)
+
 
 # -------------- docker file schema
 # 1 specify a base image
